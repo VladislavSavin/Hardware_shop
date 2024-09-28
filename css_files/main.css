@@ -1,0 +1,166 @@
+.body-content {
+    padding: 20px;
+
+    .loading {
+        display: none; /* Скрываем анимацию по умолчанию */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+    
+    .loading img {
+        background: none; /* Убираем фон у gif */
+        width: 50px; /* Размер изображения */
+    }
+
+    .more_button{
+        color:#000000;
+        background-color: #cdcdcd;
+        border: 2px solid #000000;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        img{
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .more_button:hover {
+        background-color: #d5d5d5; 
+        transform: scale(1.05);
+    }
+    .more_button:active {
+        background-color: #c2bebe; 
+        transform: scale(0.95); 
+    }
+}
+.productContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.product {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #cdcdcd; 
+    border: 1px solid #858585; 
+    border-radius: 15px; 
+    padding: 15px;
+    margin: 15px;
+    width: 270px;
+
+    .product_image{
+        height: 270px;
+        padding-bottom: 10px;
+        img {
+            max-width: 100%;
+            height: auto; 
+        }
+    }
+    h2 {
+        margin: 10px; 
+        flex-grow: 1; 
+    }
+    h3 {
+        margin: 10px; 
+        flex-grow: 1; 
+    }
+    p {
+        margin: 5px;
+    }
+    .header_buttons{
+        .add_cart_button{
+            color:#000000;
+            background-color: #eeeeee;
+            border: 2px solid #000000;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            img{
+                height: 16px;
+                width: 16px;
+            }
+        }
+        .add_cart_button:hover {
+            background-color: #ede9e9; 
+            transform: scale(1.05);
+        }
+        .add_cart_button:active {
+            background-color: #d0d0d0; 
+            transform: scale(0.95); 
+        }
+        .delete_cart_button{
+            color:#000000;
+            background-color: #e44d4d;
+            border: 2px solid #000000;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            img{
+                height: 16px;
+                width: 16px;
+            }
+        }
+        .delete_cart_button:hover {
+            background-color: #c04343; 
+            transform: scale(1.05);
+        }
+        .delete_cart_button:active {
+            background-color: #eb5151; 
+            transform: scale(0.95); 
+        }
+        .buy_cart_button{
+            color:#000000;
+            background-color: #5ab433;
+            border: 2px solid #000000;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            img{
+                height: 16px;
+                width: 16px;
+            }
+        }
+        .buy_cart_button:hover {
+            background-color: #5fc036; 
+            transform: scale(1.05);
+        }
+        .buy_cart_button:active {
+            background-color: #54a82f; 
+            transform: scale(0.95); 
+        }
+    }
+    .header_buttons1{
+        .cart_button{
+            color:#000000;
+            background-color: #5ab433;
+            border: 2px solid #000000;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            img{
+                height: 16px;
+                width: 18px;
+            }
+        }
+        .cart_button:hover {
+            background-color: #5fc036; 
+            transform: scale(1.05);
+        }
+        .cart_button:active {
+            background-color: #54a82f; 
+            transform: scale(0.95); 
+        }
+    }
+}

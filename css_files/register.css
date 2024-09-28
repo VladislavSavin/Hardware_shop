@@ -1,0 +1,66 @@
+.inf{
+    display: flex;
+    justify-content: center;
+
+    .information_cont{
+        margin-top: 100px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        background-color: #cdcdcd;
+        width: max-content;
+        border: 2px solid  rgb(51, 51, 51);
+        border-radius: 15px; 
+        padding: 20px;
+        .form_cont{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            .authform{
+                .form-label {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    font-weight: bold; /*  Жирный шрифт для метки  */
+                }
+                
+                .form-input {
+                    width: 100%; 
+                    padding: 10px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    box-sizing: border-box; 
+                }
+            }
+            
+            
+            .register-button {
+                background-color: #4CAF50; 
+                border: none; 
+                color: white; 
+                padding: 15px; 
+                padding-left: 32px;
+                padding-right: 32px;
+                text-align: center; 
+                text-decoration: none; 
+                display: inline-block; 
+                font-size: 16px; 
+                border-radius: 5px; 
+                cursor: pointer;
+                transition: all 0.2s ease; 
+            }
+        
+            .register-button:hover {
+                background-color: #3e8e41; /*  Более тёмный зелёный цвет при наведении  */
+                transform: scale(1.1); /*  Увеличиваем размер на 10%  */
+            }
+        
+            .register-button:active {
+                background-color: #367c39; /*  Ещё более тёмный зелёный цвет при нажатии  */
+                transform: scale(0.95); /*  Слегка уменьшаем размер при нажатии  */
+            }
+        }
+        .regist_href{
+            text-decoration: none;
+        }
+    }
+}
